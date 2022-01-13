@@ -1,3 +1,5 @@
+Francisco Lucas Lima Nunes
+
 # Story: Entendendo sua pretensão salarial em moedas estrangeiras 
 
 Aproveitando que "já tá todo mundo bem Senior", como diria o grande Erick Wendel, a idéia é fazer
@@ -44,16 +46,6 @@ Seguindo o padrão que já usamos anteriormente, é esperado que com o desafio p
 
 > Dica: Para facilitar sua jornada nesses testes, lembre que não só Injeção de dependências é vida em termos de testes automatizados, mas as variáveis de referência também (como é o caso dos `this.print`, `this.data` e `this.terminal`), então centrar seus testes nessas variáveis pode ser uma boa idéia.
 
-## Dicas
-
-Sinta-se livre pra desenvolver sua solução da melhor maneira possível, e caso já queira uma dica sobre como organizar as idéias, aqui vai:
-
-- Dê uma olhada na `entity` já provida para ter uma idéia de qual será o tipo de dado esperado nesse processo (achamos uma boa idéia prover a estrutura base desde o início justamente por isso :D)
-- Confira também as moedas existentes na Mock API provida (conforme tutorial nos requisitos)
-- Lembre que cada `@TODO: comment` marca um trecho da aplicação onde você terá que mexer, e sinta-se livre para descobrir a melhor sequência para implementar cada método
-- Fique atento ao comportamento esperado dos métodos que possuem testes
-- Não esqueça de conferir as aulas do curso denovo para fixar mais ainda os conhecimentos e ver como o Erick implementa o terminal
-
 ### Arquitetura e onde trabalhar
 
 ```
@@ -94,32 +86,14 @@ project
 
 ### Checklist features
 
-* [ ] Deve identificar o que está faltando no arquivo `config/terminal.js`
+* [x] Deve identificar o que está faltando no arquivo `config/terminal.js`
 
-* [ ] Deve implementar a internacionalização no arquivo `entity/Income.js`
+* [x] Deve implementar a internacionalização no arquivo `entity/Income.js`
 
-* [ ] Deve implementar os métodos existentes em `repository/IncomeRepository`, assegurando que os testes em `IncomeRepository.test.js` estejam funcionando.
+* [x] Deve implementar os métodos existentes em `repository/IncomeRepository`, assegurando que os testes em `IncomeRepository.test.js` estejam funcionando.
 
-* [ ] Deve implementar os métodos existentes em `service/IncomeService.js`, assegurando que os testes em `IncomeService.test.js` estejam funcionando.
+* [x] Deve implementar os métodos existentes em `service/IncomeService.js`, assegurando que os testes em `IncomeService.test.js` estejam funcionando.
 
-* [ ] Deve criar novos métodos e organizar a estrutura de criação do terminal em `terminal.js`
+* [x] Deve criar novos métodos e organizar a estrutura de criação do terminal em `terminal.js`
 
-* [ ] Deve entender e organizar o fluxo de chamada de funcões do terminal dentro do `mainLoop` em `index.js`
-
-## Submissão
-
-1. Crie um fork deste repositório e modifique o README.md inserindo o seu nome no início do arquivo.
-
-2. Instale as dependências usando `npm i` e garanta que os testes rodam normalmente com `npm run dev`
-
-> Nota: Como a idéia é que você implemente os códigos a fim de fazer os testes passarem e a saída ficar como no vídeo mencionado um pouco acima nesse README, a princípio todos os testes estarão quebrando, então não se assuste. :) 
-
-3. Implemente cada uma das funções marcadas com um `//@TODO: comment` (e não se esqueça de remover esses comentários uma vez que concluir a implementação)
-
-4. Garanta que todos os testes estejam rodando e, caso queira, conclua o desafio opcional mencionado acima. 
-
-5. Envie o link no canal `#desafios-jsexpert` da nossa comunidade no discord.
-
-## Até quando?
-
-Se você está pegando esse desafio na estréia, corre lá e envia pra gente até *Quarta-feira, 12 de janeiro de 2022 (12/01/2022)*!
+* [x] Deve entender e organizar o fluxo de chamada de funcões do terminal dentro do `mainLoop` em `index.js`
