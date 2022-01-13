@@ -1,4 +1,4 @@
-import languageConfig from '../config/language.js';
+import languageConfig from "../config/language.js";
 
 const defaultLanguage = languageConfig.default;
 
@@ -11,10 +11,26 @@ class Income {
     conversion03,
   }) {
     this.position = position;
-    this.expectation = expectation || { currency: 'BRL', language: 'pt-BR' };
-    this.conversion01 = conversion01 || { currency: 'USD', language: 'en-US' };
-    this.conversion02 = conversion02 || { currency: 'EUR', language: 'en-GB' };
-    this.conversion03 = conversion03 || { currency: 'RUB', language: 'ru-RU' };
+    this.expectation = expectation || {
+      currency: "BRL",
+      language: "pt-BR",
+      value: 1,
+    };
+    this.conversion01 = conversion01 || {
+      currency: "USD",
+      language: "en-US",
+      value: 1,
+    };
+    this.conversion02 = conversion02 || {
+      currency: "EUR",
+      language: "en-GB",
+      value: 1,
+    };
+    this.conversion03 = conversion03 || {
+      currency: "RUB",
+      language: "ru-RU",
+      value: 1,
+    };
   }
 
   format() {
@@ -28,11 +44,11 @@ class Income {
     };
   }
 
-  static formatCurrency({ currency, value, language }) {
-    const _language = language || defaultLanguage;
-
-    // TODO: Implement method
-    return null;
+  static formatCurrency({ currency, value, language = defaultLanguage }) {
+    return new Intl.NumberFormat(language, {
+      style: "currency",
+      currency,
+    }).format(value);
   }
 }
 
